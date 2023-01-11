@@ -21,30 +21,30 @@
   <body>
     <header class="header">
       <a href="index.html" class="aLink"
-        ><span class="headerLogoTextProps"><span class="blueText">Web</span>Studio</span></a
+        ><span class="aLink__logo"><span class="blueText">Web</span>Studio</span></a
       >
-      <nav class="navContainer">
-        <ul class="listOfNavBtns">
-          <li class="listItemProps">
-            <a href="index.html" class="aLink blueTextOnHover actualContent">Agencja</a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="listItem">
+            <a href="index.html" class="aLink blueTextOnHover header__nav-underline">Agencja</a>
           </li>
-          <li class="listItemProps">
+          <li class="listItem">
             <a href="portfolio.html" class="aLink blueTextOnHover">Portfolio</a>
           </li>
-          <li class="listItemProps">
+          <li class="listItem">
             <a href="#" class="aLink blueTextOnHover">kontakt</a>
           </li>
         </ul>
       </nav>
-      <section class="contact">
-        <a href="mailto:info@devstudio.com" class="aLink blueTextOnHover contactHeader">
-          <svg class="svg" width="16px" height="12px">
+      <section class="header__contacts">
+        <a href="mailto:info@devstudio.com" class="aLink blueTextOnHover header__contacts-item ">
+          <svg class="header__contacts-icon" width="16px" height="12px">
             <use href="images\svg\icons.svg#envelope"></use>
           </svg>
           info@devstudio.com</a
         >
-        <a href="tel:+48111111111" class="aLink blueTextOnHover contactHeader phoneNumberAlignment"
-          ><svg class="svg" width="10px" height="16px">
+        <a href="tel:+48111111111" class="aLink blueTextOnHover header__contacts-item"
+          ><svg class="header__contacts-icon" width="10px" height="16px">
             <use href="images\svg\icons.svg#smartphone"></use>
           </svg>
           +48 111 111 111
@@ -53,73 +53,73 @@
     </header>
     <div class="line"></div>
     <main class="main">
-      <section class="bigAD">
+      <section class="main__ad">
         <div class="container">
-          <div class="bigADDisplay">
-            <h1 class="bigADTitle">
+          <div class="main__ad-display">
+            <h1 class="main__ad-title">
               EFEKTYWNE ROZWIĄZANIA<br />
               DLA WASZEGO BIZNESU
             </h1>
-            <button data-modal-open type="button" class="btnChangeOnHover bigADBtn">Zamów usługe</button>
+            <button data-modal-open type="button" class="btnChangeOnHover main__ad-btn">Zamów usługe</button>
           </div>
         </div>
       </section>
-      <section class="teamPros">
-        <ul class="listOfTeamPros">
-          <li class="listItemProps">
-            <div class="companyLogos">
+      <section class="main__teamPros">
+        <ul class="main__teamPros-list">
+          <li class="listItem">
+            <div class="main__teamPros-companies">
               <svg class="svg" width="70px" height="70px">
                 <use href="images\svg\icons.svg#antenna"></use>
               </svg>
             </div>
-            <h2 class="paragraphTitle">LOREM IPSUM</h2>
-            <p class="paragraphDescription">
+            <h2 class="main__teamPros-title">LOREM IPSUM</h2>
+            <p class="main__teamPros-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="listItemProps">
-            <div class="companyLogos">
+          <li class="listItem">
+            <div class="main__teamPros-companies">
               <svg class="svg" width="70px" height="70px">
                 <use href="images\svg\icons.svg#clock"></use>
               </svg>
             </div>
-            <h2 class="paragraphTitle">LOREM IPSUM</h2>
-            <p class="paragraphDescription">
+            <h2 class="main__teamPros-title">LOREM IPSUM</h2>
+            <p class="main__teamPros-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="listItemProps">
-            <div class="companyLogos">
+          <li class="listItem">
+            <div class="main__teamPros-companies">
               <svg class="svg" width="70px" height="70px">
                 <use href="images\svg\icons.svg#diagram"></use>
               </svg>
             </div>
-            <h2 class="paragraphTitle">LOREM IPSUM</h2>
-            <p class="paragraphDescription">
+            <h2 class="main__teamPros-title">LOREM IPSUM</h2>
+            <p class="main__teamPros-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="listItemProps">
-            <div class="companyLogos">
+          <li class="listItem">
+            <div class="main__teamPros-companies">
               <svg class="svg" width="70px" height="70px">
                 <use href="images\svg\icons.svg#astronaut"></use>
               </svg>
             </div>
-            <h2 class="paragraphTitle">LOREM IPSUM</h2>
-            <p class="paragraphDescription">
+            <h2 class="main__teamPros-title">LOREM IPSUM</h2>
+            <p class="main__teamPros-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
         </ul>
       </section>
-      <section class="photoGallery">
+      <section class="main__photos">
         <h2 class="galleriesTitle">Czym się zajmujemy</h2>
         <ul class="listOfWorkPhotos">
-          <li class="listItemProps">
+          <li class="listItem">
             <img
               src="images/services/ManTypingOnTablet.jpg"
               alt="Osoba zapisująca kod"
@@ -129,8 +129,7 @@
             /><div class="softText"><span class="textInSoftText">APLIKACJE KOMPUTEROWE<span></div>
             </li>
           </li>
-
-          <li class="listItemProps">
+          <li class="listItem">
             <img
               src="images/services/WomanWithAPhone.jpg"
               alt="Osoba projektująca stronę internetową"
@@ -138,7 +137,7 @@
               height="294"
             /><div class="softText"><span class="textInSoftText">APLIKACJE MOBILNE<span></span></div>
           </li>
-          <li class="listItemProps">
+          <li class="listItem">
             <img
               src="images/services/ChoosingColorOnPalett.jpg"
               alt="Osoba projektująca grafikę wybiera kolor z palety RGB"
@@ -151,7 +150,7 @@
       <section class="photoGalleryOfCrue">
         <h2 class="galleriesTitle">Nasz zespół</h2>
         <ul class="listOfCruePhotos">
-          <li class="listItemProps">
+          <li class="listItem">
             <figure class="cruePictureDescriptionProps">
               <img
                 src="images\employees\Jeremy.jpg"
@@ -186,7 +185,7 @@
               </div>
             </figure>
           </li>
-          <li class="listItemProps">
+          <li class="listItem">
             <figure class="cruePictureDescriptionProps">
               <img
                 src="images\employees\Anna.jpg"
@@ -221,7 +220,7 @@
               </div>
             </figure>
           </li>
-          <li class="listItemProps">
+          <li class="listItem">
             <figure class="cruePictureDescriptionProps">
               <img
                 src="images\employees\Brandon.jpg"
@@ -256,7 +255,7 @@
               </div>
             </figure>
           </li>
-          <li class="listItemProps">
+          <li class="listItem">
             <figure class="cruePictureDescriptionProps">
               <img
                 src="images\employees\John.jpg"
@@ -296,32 +295,32 @@
       <section class="ourCustomers">
         <h2 class="galleriesTitle">Nasi klienci</h2>
         <ul class="companyLogosContainer">
-          <li class="listItemProps">
+          <li class="listItem">
             <svg class="svg" width="172px" height="92px">
               <use href="images\svg\icons.svg#yaCo"></use>
             </svg>
           </li>
-          <li class="listItemProps">
+          <li class="listItem">
             <svg class="svg" width="172px" height="92px">
               <use href="images\svg\icons.svg#companyTagLine2"></use>
             </svg>
           </li>
-          <li class="listItemProps">
+          <li class="listItem">
             <svg class="svg" width="172px" height="92px">
               <use href="images\svg\icons.svg#company"></use>
             </svg>
           </li>
-          <li class="listItemProps">
+          <li class="listItem">
             <svg class="svg" width="172px" height="92px">
               <use href="images\svg\icons.svg#fosterPeters"></use>
             </svg>
           </li>
-          <li class="listItemProps">
+          <li class="listItem">
             <svg class="svg" width="172px" height="92px">
               <use href="images\svg\icons.svg#brand"></use>
             </svg>
           </li>
-          <li class="listItemProps">
+          <li class="listItem">
             <svg class="svg" width="172px" height="92px">
               <use href="images\svg\icons.svg#companyTagLine1"></use>
             </svg>

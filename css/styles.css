@@ -103,7 +103,7 @@ body {
   font-size: 0.875rem;
 }
 
-.contactHeader {
+.header__contacts-item {
   color: var(--gray-text);
   fill: currentColor;
   font-weight: 400;
@@ -114,13 +114,13 @@ body {
   gap: 10px;
 }
 
-.contact {
+.header__contacts {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.bigAD {
+.main__ad {
   background-color: var(--background-color-dark);
   background: linear-gradient(#2f303a40, #2f303a40);
   display: flex;
@@ -132,7 +132,7 @@ body {
   background-position: center;
   width: 1600px;
 }
-.bigAD .bigADBtn {
+.main__ad-btn {
   width: 200px;
   height: 50px;
   font-family: "Roboto";
@@ -141,7 +141,7 @@ body {
   font-size: 16px;
 }
 
-.bigAD .bigADTitle {
+.main__ad-title {
   color: var(--footer-Studio-text-color);
   font-weight: 900;
   font-size: 2.75rem;
@@ -161,7 +161,7 @@ body {
   color: var(--body-font-color);
 }
 
-.headerLogoTextProps {
+.aLink__logo {
   font-family: "raleway", sans-serif;
   font-weight: 700;
   font-size: 1.625rem;
@@ -180,7 +180,7 @@ body {
   text-decoration: none;
 }
 
-.photoGallery {
+.main__photos {
   width: 1170px;
   height: 386px;
   padding-bottom: 94px;
@@ -239,7 +239,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.listOfWorkPhotos .listItemProps {
+.listOfWorkPhotos .listItem {
   position: relative;
   width: 370px;
   height: 294px;
@@ -260,19 +260,19 @@ body {
   padding-bottom: 30px;
 }
 
-.photoGalleryOfCrue .listItemProps .cruePictureDescriptionProps {
+.photoGalleryOfCrue .listItem .cruePictureDescriptionProps {
   background: var(--footer-Studio-text-color);
   box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
   border-radius: 0px 0px 4px 4px;
 }
 
-.listItemProps .paragraphTitle {
+.main__teamPros-title {
   font-weight: 700;
   font-size: 0.875rem;
   color: var(--body-font-color);
 }
 
-.listItemProps .paragraphDescription {
+.main__teamPros-paragraph {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.71;
@@ -296,7 +296,7 @@ body {
   height: 110px;
 }
 
-.listItemProps .aLink {
+.listItem .aLink {
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.14;
@@ -307,7 +307,7 @@ body {
   margin: 0 auto;
 }
 
-.bigADDisplay {
+.main__ad-display {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -323,15 +323,15 @@ body {
   margin: 0 auto;
 }
 
-.navContainer {
+.header__nav {
   color: var(--body-font-color);
 }
 
-.listOfNavBtns .aLink {
+.header__nav-list .aLink {
   position: relative;
 }
 
-.listOfNavBtns .actualContent::after {
+.header__nav-underline::after {
   content: "";
   left: 0px;
   width: 53px;
@@ -342,7 +342,7 @@ body {
   position: absolute;
 }
 
-.navContainer .listOfNavBtns {
+.header__nav .header__nav-list {
   display: flex;
   gap: 46px;
   width: 254px;
@@ -359,21 +359,21 @@ body {
   align-items: center;
 }
 
-.teamPros {
+.main__teamPros {
   width: 1170px;
   height: 251px;
   padding: 94px 215px 94px 215px;
   margin: 0 auto;
 }
 
-.teamPros .listItemProps {
+.main__teamPros .listItem {
   width: 260px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.teamPros .listItemProps .companyLogos {
+.main__teamPros-companies {
   height: 120px;
   width: 270px;
   background-color: var(--crue-gallery-color);
@@ -383,7 +383,7 @@ body {
   align-items: center;
 }
 
-.teamPros .listOfTeamPros {
+.main__teamPros-list {
   padding: 0px;
   display: flex;
   gap: 30px;
@@ -477,9 +477,9 @@ body {
   position: relative;
 }
 
-.portfolioGalleryFirstRow .listItemProps:hover .overlay,
-.portfolioGallerySecondRow .listItemProps:hover .overlay,
-.portfolioGalleryThirdRow .listItemProps:hover .overlay {
+.portfolioGalleryFirstRow .listItem:hover .overlay,
+.portfolioGallerySecondRow .listItem:hover .overlay,
+.portfolioGalleryThirdRow .listItem:hover .overlay {
   transform: translateY(0);
   transition-property: transform;
   transition-duration: 250ms;
@@ -539,9 +539,9 @@ body {
   gap: 30px;
 }
 
-.portfolioGalleryFirstRow .listItemProps .portfolioGalleryItems,
-.portfolioGallerySecondRow .listItemProps .portfolioGalleryItems,
-.portfolioGalleryThirdRow .listItemProps .portfolioGalleryItems {
+.portfolioGalleryFirstRow .listItem .portfolioGalleryItems,
+.portfolioGallerySecondRow .listItem .portfolioGalleryItems,
+.portfolioGalleryThirdRow .listItem .portfolioGalleryItems {
   width: 370px;
   height: 404px;
   transition-property: box-shadow;
@@ -625,7 +625,7 @@ body {
   gap: 30px;
 }
 
-.companyLogosContainer .listItemProps .svg {
+.companyLogosContainer .listItem .svg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -637,8 +637,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.companyLogosContainer .listItemProps .svg:focus,
-.companyLogosContainer .listItemProps .svg:hover {
+.companyLogosContainer .listItem .svg:focus,
+.companyLogosContainer .listItem .svg:hover {
   fill: var(--blue-text);
   border-color: var(--blue-text);
 }
