@@ -31,7 +31,8 @@ body {
   color: var(--body-font-color);
 }
 
-.blueText {
+.footer__logo--blue,
+.header__logo--blue {
   color: var(--blue-text);
 }
 
@@ -96,7 +97,7 @@ body {
   height: 38px;
 }
 
-.contactFooter {
+.address__contact {
   color: var(--footer-Studio-text-color);
   opacity: 60%;
   font-weight: 400;
@@ -161,7 +162,7 @@ body {
   color: var(--body-font-color);
 }
 
-.aLink__logo {
+.header__logo {
   font-family: "raleway", sans-serif;
   font-weight: 700;
   font-size: 1.625rem;
@@ -171,13 +172,14 @@ body {
   margin-left: 215px;
 }
 
-.footerLogoTextProps {
+.footer__logo {
   font-family: "raleway", sans-serif;
   font-weight: 700;
   font-size: 1.625rem;
   line-height: 1.19;
   color: var(--footer-Studio-text-color);
   text-decoration: none;
+  margin-bottom:20px
 }
 
 .main__photos {
@@ -192,18 +194,18 @@ body {
   gap: 50px;
 }
 
-.listOfWorkPhotos {
+.main__photos-list {
   display: flex;
   gap: 30px;
   padding: 0px;
 }
 
-.galleriesTitle {
+.main__photos-title {
   font-weight: 700;
   font-size: 2.25rem;
 }
 
-.photoGalleryOfCrue {
+.main__team {
   background-color: var(--crue-gallery-color);
   height: 648px;
   width: 99vw;
@@ -215,7 +217,7 @@ body {
   padding-bottom: 94px;
 }
 
-.softText {
+.main__photos-container {
   margin: 0;
   bottom: 0;
   width: 370px;
@@ -229,7 +231,7 @@ body {
   justify-content: center;
 }
 
-.textInSoftText {
+.main__photos-container--text {
   display: block;
   color: var(--footer-Studio-text-color);
   font-family: "Roboto";
@@ -239,28 +241,33 @@ body {
   letter-spacing: 0.03em;
 }
 
-.listOfWorkPhotos .listItem {
+.main__photos-item {
   position: relative;
   width: 370px;
   height: 294px;
 }
 
-.photoGalleryOfCrue .listOfCruePhotos {
+.main__team-list {
   display: flex;
   gap: 30px;
   padding: 0px;
 }
 
-.photoGalleryOfCrue .cruePictureDescriptionProps {
+.main__team-title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.main__team-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 428px;
   gap: 30px;
   padding-bottom: 30px;
-}
-
-.photoGalleryOfCrue .listItem .cruePictureDescriptionProps {
   background: var(--footer-Studio-text-color);
   box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
   border-radius: 0px 0px 4px 4px;
@@ -280,14 +287,14 @@ body {
   flex-wrap: wrap;
 }
 
-.galleryDescription .galleryDescriptionTitle {
+.main__team-container--name {
   font-weight: 700;
   font-size: 1.125rem;
   color: var(--body-font-color);
   line-height: 2;
 }
 
-.galleryDescription {
+.main__team-container--description {
   font-weight: 400;
   font-size: 1rem;
   color: var(--gray-text);
@@ -366,7 +373,7 @@ body {
   margin: 0 auto;
 }
 
-.main__teamPros .listItem {
+.main__teamPros-item {
   width: 260px;
   display: flex;
   flex-direction: column;
@@ -400,25 +407,26 @@ body {
   bottom: 0;
 }
 
-.footer .socialmediaContainer,
-.footer .mainFooterInfo {
+.footer__container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.socialmediaContainer,
-.newsletter {
+.footer__socialmedia {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__socialmedia,
+.footer__newsletter{
   margin-top: -30px;
 }
 
-.footer .socialmedia {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
 
-.footer .socialmedia .iconBackground {
+
+.footer .socialmedia__link {
   background-color: var(--social-media-icons-color);
   width: 44px;
   height: 44px;
@@ -432,12 +440,12 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer .socialmedia .svg {
+.footer .socialmedia__image {
   fill: var(--footer-Studio-text-color);
 }
 
-.footer .iconBackground:hover,
-.footer .iconBackground:focus {
+.footer .socialmedia__link:hover,
+.footer .socialmedia__link:focus {
   background-color: var(--blue-text);
 }
 
@@ -453,7 +461,8 @@ body {
   height: 17px;
 }
 
-.joinUsText {
+.footer__socialmedia-text,
+.footer__newsletter-text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -576,12 +585,12 @@ body {
   border: 1px solid var(--portfolio-gallery-border-color);
 }
 
-.photoGalleryOfCrue .socialmedia {
+.socialmedia {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.photoGalleryOfCrue .iconBackground {
+.socialmedia__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -594,24 +603,24 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.photoGalleryOfCrue .iconBackground .svg {
+.socialmedia__image {
   fill: var(--social-media-color);
 }
 
-.photoGalleryOfCrue .iconBackground:hover,
-.photoGalleryOfCrue .iconBackground:focus {
+.socialmedia__link:hover,
+.socialmedia__link:focus {
   background-color: var(--blue-text);
 }
 
-.photoGalleryOfCrue .iconBackground:hover .svg,
-.photoGalleryOfCrue .iconBackground:focus .svg {
+.socialmedia__link:hover .socialmedia__image,
+.socialmedia__link:focus .socialmedia__image {
   fill: var(--footer-Studio-text-color);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ourCustomers {
+.main__Customers {
   height: 372px;
   display: flex;
   flex-direction: column;
@@ -620,12 +629,20 @@ body {
   gap: 50px;
 }
 
-.companyLogosContainer {
+.main__Customers-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.main__Customers-list {
   display: flex;
   gap: 30px;
 }
 
-.companyLogosContainer .listItem .svg {
+.main__Customers-item--image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -637,8 +654,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.companyLogosContainer .listItem .svg:focus,
-.companyLogosContainer .listItem .svg:hover {
+.main__Customers-item--image:focus,
+.main__Customers-item--image:hover {
   fill: var(--blue-text);
   border-color: var(--blue-text);
 }
@@ -673,7 +690,7 @@ body {
   padding-bottom: 40px;
 }
 
-.modalClose {
+.modal__Close {
   top: 8px;
   right: 8px;
   width: 30px;
@@ -691,7 +708,7 @@ body {
   opacity: 0;
 }
 
-.newsletter {
+.footer__newsletter {
   width: 570px;
   height: 86px;
   display: flex;
@@ -699,7 +716,7 @@ body {
   justify-content: space-between;
 }
 
-.newsletterForm .input {
+.footer__newsletter-input {
   border: 1px solid var(--newsletter-border-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -711,7 +728,7 @@ body {
   color: var(--footer-Studio-text-color);
 }
 
-.newsletterForm .input::placeholder {
+.footer__newsletter-input::placeholder {
   color: var(--newsletter-border-color);
   font-size: 16px;
   line-height: 1.25;
@@ -720,14 +737,14 @@ body {
   align-items: center;
 }
 
-.newsletterForm {
+.footer__newsletter-form {
   height: 50px;
   width: 570px;
   display: flex;
   gap: 12px;
 }
 
-.btnSend {
+.footer__newsletter-btn {
   width: 200px;
   height: 50px;
   border: 0;
@@ -745,21 +762,21 @@ body {
   cursor: pointer;
 }
 
-.mainFormTitle {
+.modal__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
 }
 
-.mainSignUpForm {
+.modal__form {
   display: flex;
   flex-direction: column;
   gap: 28px;
   align-items: center;
 }
 
-.mainSignUpForm .textBoxInput {
+.modal__input--input {
   display: flex;
   flex-direction: column;
   height: 40px;
@@ -773,26 +790,24 @@ body {
   gap: 15px;
 }
 
-.inputContainer {
+.modal__input {
   display: flex;
   flex-direction: column;
   width: 448px;
 }
 
-.optimizer {
+.modal__input--optimizer {
   display: flex;
   align-items: center;
 }
 
-.optimizer .textBoxInput:focus-within {
+
+.modal__input--input:focus {
+  outline: none;
   border-color: var(--blue-text);
 }
 
-.textBoxInput:focus-within {
-  outline: none;
-}
-
-.optimizer .svg {
+.modal__input--optimizer .modal__image {
   padding-left: 15px;
   position: absolute;
   transition-property: fill;
@@ -800,11 +815,11 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textBoxInput:focus + .svg {
+.modal__input--input:focus + .modal__image {
   fill: var(--blue-text);
 }
 
-.textArea {
+.modal__comment {
   width: 416px;
   height: 96px;
   border-radius: 4px;
@@ -816,7 +831,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textArea::placeholder {
+.modal__comment::placeholder {
   color: var(--text-in-comment-container);
   font-family: "Roboto";
   font-style: normal;
@@ -824,17 +839,17 @@ body {
   font-size: 12px;
 }
 
-.textArea:focus {
+.modal__comment:focus {
   border-color: var(--blue-text);
 }
 
-.checkbox {
+.modal__checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.regulations {
+.checkbox__regulations {
   display: block;
   font-family: "Roboto";
   font-style: normal;
@@ -843,7 +858,7 @@ body {
   color: var(--gray-text);
 }
 
-.CustomCheckbox {
+.checkbox__custom {
   border: 1px solid var(--body-font-color);
   border-radius: 2px;
   width: 14px;
@@ -854,7 +869,7 @@ body {
   align-items: center;
 }
 
-.OkaySvg {
+.checkbox__image {
   background-color: var(--blue-text);
   fill: var(--portfolio-gallery-border-color);
   position: absolute;
@@ -865,23 +880,23 @@ body {
   opacity: 0;
 }
 
-.checkbox .chkBox {
+.checkbox__input {
   display: none;
   pointer-events: none;
 }
 
-.checkbox .chkBox:checked + .CustomCheckbox > .OkaySvg {
+.checkbox__input:checked + .checkbox__custom > .checkbox__image {
   opacity: 1;
 }
 
-.chkBoxContainer {
+.checkbox {
   cursor: pointer;
   display: flex;
   gap: 15px;
   align-items: center;
 }
 
-.btnSubmit {
+.modal__btn {
   width: 200px;
   height: 50px;
   background: var(--blue-text);
