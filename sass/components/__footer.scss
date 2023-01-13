@@ -38,7 +38,7 @@
     font-size: 0.875rem;
 
     &:visited {
-      color: var(--body-font-color);
+      color: $--body-font-color;
     }
 
     &:hover,
@@ -153,7 +153,7 @@
     justify-content: space-evenly;
     align-items: center;
     background: $--blue-text;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px $--back-drop-color;
     border-radius: 4px;
     color: $--footer-Studio-text-color;
     cursor: pointer;

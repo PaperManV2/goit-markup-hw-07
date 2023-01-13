@@ -7,7 +7,7 @@
   margin: 0 auto;
 
   &__nav {
-    color: var(--body-font-color);
+    color: $--body-font-color;
 
     &--underline::after {
       content: "";
