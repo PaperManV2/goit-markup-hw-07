@@ -27,15 +27,15 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
 
+    &:visited {
+      color: $--body-font-color;
+    }
+
     &:hover,
     &:focus {
       color: $--blue-text;
       opacity: 100%;
       fill: currentColor;
-    }
-
-    &:visited {
-      color: $--body-font-color;
     }
   }
 

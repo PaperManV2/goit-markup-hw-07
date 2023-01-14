@@ -58,7 +58,7 @@
       border-color: $--blue-text;
     }
 
-    &:focus + &__image {
+    &:focus + .modal__image {
       fill: $--blue-text;
     }
   }

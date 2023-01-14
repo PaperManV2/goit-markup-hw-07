@@ -19,13 +19,13 @@ ul {
 
 body {
   font-family: "roboto", serif;
-  color: var(--body-font-color);
+  color: $--body-font-color;
 }
 
 .line {
   width: auto;
   height: 0px;
-  border: 1px solid var(--line-color);
+  border: 1px solid $--line-color;
 }
 
 .container {

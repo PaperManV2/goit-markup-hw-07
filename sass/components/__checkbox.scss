@@ -40,7 +40,7 @@
     pointer-events: none;
   }
 
-  &__input + &__custom > &__image {
+  &__input:checked + &__custom > &__image {
     opacity: 1;
   }
 }
